@@ -1,11 +1,9 @@
 import './global.css'
 
-import { Button } from '@/components/ui/button'
+import { RouterProvider } from 'react-router-dom'
+
+import { router } from './routes'
 
 export function App() {
-  return (
-    <div className="flex">
-      <Button variant="outline">Button</Button>
-    </div>
-  )
+  return <RouterProvider router={router} />
 }
